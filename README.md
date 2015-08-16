@@ -12,7 +12,6 @@ The reward you can issue does not have to be credits, basically any console comm
 
 
 The php is fairly straightforward, but I had to put a few twists and turns in because of the limited API options exposed to me by starmade-servers.com doesn't just give me a list of people who voted in the voting day (you can only vote once per day per player, and thus can only claim one vote per day per player). I can get a list of ALL votes, and I can check with their API if a player has voted in the last voting day - so I have to make the first API query to get the list of all possible voters, then make a separate API call for each of those voters to see if they have voted in the last voting day. I would have preferred to have an option to make just one API call to get all unclaimed votes which are eligible to claim, but we can't always have what we want.
-## Prerequisites ##
 
 ## Installation ##
 Place the rewardvotes.php in the same folder as your StarMade server
